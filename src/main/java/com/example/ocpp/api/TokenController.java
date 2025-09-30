@@ -3,10 +3,12 @@ package com.example.ocpp.api;
 import com.example.ocpp.domain.UserToken;
 import com.example.ocpp.repo.UserTokenRepo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/tokens")
+//@ConditionalOnProperty(name = "database.enabled", havingValue = "true", matchIfMissing = false)
 public class TokenController {
     @Autowired private UserTokenRepo repo;
 

@@ -3,6 +3,7 @@ package com.example.ocpp.api;
 import com.example.ocpp.domain.Transaction;
 import com.example.ocpp.repo.TransactionRepo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.web.bind.annotation.*;
 import java.time.*;
 import java.util.*;
@@ -10,8 +11,10 @@ import java.util.stream.*;
 
 @RestController
 @RequestMapping("/api/reports")
+//@ConditionalOnProperty(name = "database.enabled", havingValue = "true", matchIfMissing = false)
 public class ReportController {
-    @Autowired private TransactionRepo txRepo;
+	@Autowired
+    private TransactionRepo txRepo;
 
     @GetMapping("/energy")
     public Map<String,Object> energy(@RequestParam String from, @RequestParam String to){

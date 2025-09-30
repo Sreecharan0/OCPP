@@ -3,11 +3,13 @@ package com.example.ocpp.api;
 import com.example.ocpp.domain.ChargingStation;
 import com.example.ocpp.repo.ChargingStationRepo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.web.bind.annotation.*;
 import java.util.*;
 
 @RestController
 @RequestMapping("/api/stations")
+//@ConditionalOnProperty(name = "database.enabled", havingValue = "true", matchIfMissing = false)
 public class StationController {
     @Autowired private ChargingStationRepo repo;
 
