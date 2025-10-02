@@ -25,6 +25,7 @@ com\example\ocpp\domain\Transaction$State.class
 com\example\ocpp\api\TokenController.class
 com\example\ocpp\repo\MeterValueRepo.class
 com\example\ocpp\ws\OcppWebSocketHandler.class
+com\example\ocpp\config\JacksonConfig.class
 com\example\ocpp\repo\ConnectorRepo.class
 com\example\ocpp\service\OcppService.class
 com\example\ocpp\domain\Connector.class

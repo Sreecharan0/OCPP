@@ -2,6 +2,7 @@ C:\Users\chara\git\repository\ocpp-evse-backend\src\main\java\com\example\ocpp\a
 C:\Users\chara\git\repository\ocpp-evse-backend\src\main\java\com\example\ocpp\api\StationController.java
 C:\Users\chara\git\repository\ocpp-evse-backend\src\main\java\com\example\ocpp\api\TokenController.java
 C:\Users\chara\git\repository\ocpp-evse-backend\src\main\java\com\example\ocpp\api\TransactionController.java
+C:\Users\chara\git\repository\ocpp-evse-backend\src\main\java\com\example\ocpp\config\JacksonConfig.java
 C:\Users\chara\git\repository\ocpp-evse-backend\src\main\java\com\example\ocpp\config\WebSocketConfig.java
 C:\Users\chara\git\repository\ocpp-evse-backend\src\main\java\com\example\ocpp\domain\ChargingStation.java
 C:\Users\chara\git\repository\ocpp-evse-backend\src\main\java\com\example\ocpp\domain\Connector.java

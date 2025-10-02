@@ -29,7 +29,8 @@ public class OcppService {
     private final MeterValueRepo mvRepo;
     private final UserTokenRepo tokenRepo;
     private final OcppMessageCodec codec;
-    private final ObjectMapper mapper = new ObjectMapper();
+    @Autowired
+    private ObjectMapper mapper;
 
     @Autowired
     public OcppService(ChargingStationRepo stationRepo, ConnectorRepo connectorRepo, TransactionRepo txRepo,
